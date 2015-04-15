@@ -3,9 +3,9 @@ import java.io.File;
 public interface Client
 {
 
-	String clientID();
+	String getID();
 
-	void clientID(String id);
+	void setID(String id);
 
 	/**
 	* Requests for a unique ID
@@ -17,10 +17,9 @@ public interface Client
 
 	String firstToConnect();
 
-	void sendAudio(File audioFile);
-
+	
 	File receiveAudio();
 
-	void playAudio(File audioFile);
+	void playAudio(File file);
 
 }
